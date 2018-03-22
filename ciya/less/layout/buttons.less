@@ -1,0 +1,111 @@
+.button { 
+
+    text-align: center;
+    cursor: pointer;
+    height: 40px; 
+    font-size: 12px;
+    line-height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0px; 
+
+    &--small {
+        height: 30px !important; 
+        font-size: 10px !important;
+        line-height: 30px !important;
+    }
+
+    &--medium {
+        height: 50px !important; 
+        font-size: 18px !important;
+        line-height: 50px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &--large {
+        height: 75px !important; 
+        font-size: 26px !important;
+        line-height: 75px !important;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    &--extralarge {
+        height: 100px !important; 
+        font-size: 28px !important;
+        line-height: 100px !important;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__circle { 
+
+        border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px !important;
+        
+        &--transparent {
+            background-color: transparent !important;
+        }
+    
+        &--small {
+            width: 30px !important;
+            height: 30px !important;
+            font-size: 10px !important;
+            line-height: 30px !important;
+        }
+    
+        &--medium {
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 18px !important;
+            line-height: 50px !important;
+        }
+    
+        &--large {
+            width: 75px !important;
+            height: 75px !important;
+            font-size: 26px !important;
+            line-height: 75px !important;
+        }
+    
+        &--extralarge {
+            width: 100px !important;
+            height: 100px !important;
+            font-size: 28px !important;
+            line-height: 100px !important;
+        }
+    }
+
+    &--transparent {
+        background-color: transparent !important;
+    }
+
+    &--primary { 
+
+        color: @button_darkcolor_primary;
+        background-color: @button_darkbg_primary;
+
+        &:active, &:hover, &:focus {
+            background-color: darken(@button_darkbg_primary, 10%);
+        }
+
+    } 
+
+    &--secondary { 
+
+        color: @button_darkcolor_secondary;
+        background-color: @button_darkbg_secondary;
+
+        &:active, &:hover, &:focus {
+            background-color: darken(@button_darkbg_secondary, 10%);
+        }
+
+    }
+
+}

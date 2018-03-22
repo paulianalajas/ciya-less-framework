@@ -1,0 +1,85 @@
+.form {
+
+    &__control {
+        display: block;
+        margin: 10px 0;
+    }
+
+    &__text {
+
+        padding: 7px 10px;
+        border: solid 1px @border_dark_1;
+        outline: none;
+        border-radius: 0px;
+        color: @color_dark_title;
+        font-size: 12px !important;
+        background-color: transparent;
+        word-wrap: break-word;
+         
+        &--error {
+            border: solid 1px @color_light_danger;
+        }
+
+        &--error:active, &--error:hover, &--error:focus { 
+            border: solid 1px darken(@color_light_danger, 10%);
+        }
+        
+        &--success {
+            border: solid 1px @color_light_success;
+        }
+
+        &--success:active, &--success:hover, &--success:focus {
+            border: solid 1px darken(@color_light_success, 10%);
+        }
+        
+    }
+
+    &__label {
+        color: @border_dark_2 !important; 
+    }
+
+    &__captchaimage {
+
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;     
+        position: absolute !important;
+        top: 1px !important; /* 23 */
+        right: 1px !important;
+
+        &_with_label {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;     
+            position: absolute !important;
+            top: 23px !important; /* 1 */
+            right: 1px !important;
+        }
+
+    } 
+
+    &__box {
+        padding: 7px 10px;
+        border: solid 1px @border_dark_1;
+        outline: none;
+        border-radius: 0px;
+        font-size: 12px !important;
+        background-color: transparent;
+        word-wrap: break-word;
+    }
+
+    &__breadcrumb {
+        padding: 7px 0;
+        border: solid 0px @border_dark_1;
+        outline: none;
+        border-radius: 3px;
+        font-size: 12px !important;
+        background-color: transparent;
+        word-wrap: break-word;
+    }
+
+}
